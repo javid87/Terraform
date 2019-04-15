@@ -1,4 +1,8 @@
-English
+![AWS S3 with CloudFront](
+https://user-images.githubusercontent.com/34796494/56144766-a55ea380-5fab-11e9-816a-674878d46246.PNG)
+
+
+# English:
 This is Basic Terraform confguration with two modules ( security, storage )
 Storage Module - Create two Bucket. One of them is Basic Log buget that logging All access log. Secondary Bucket is our Site bucket where we put our site data ( in my case index.html and error.html ). you can change this files with your own files. 
 
@@ -6,7 +10,7 @@ Security Module - CloudFront with HTTP to HTTPS redirection and SSL cert ( if yo
 
 P.S: I'm new in terraform becouse i'm very happy if any one help improve this modules. Thanks
 
-Azerbaijan:
+# Azerbaijan:
 Salam Dostlar. Bu Terraformda sade S3 bucket ve CloudFront baglamasindan ibaret iki modullu( security, storage )  Terraform konfigurasiyadir.
 Storage Module - Burada iki Bucket yaradilir. Bir Bucket sade Log bucketdir hansi ki ozunde bizim sehfemizie ziyaret edenlerin access loglarin toplayacaq. Ikinci ise bizim saytimizin melumatlari yerleshen esas bucketdir. Burada men oz file-larimizi yerleshdirmishem ( index.html ve error.html ) siz bu filelari oz shexsi fayllarinzla deyishe bielrsiniz.
 
