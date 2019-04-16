@@ -1,9 +1,5 @@
 resource "aws_cloudfront_origin_access_identity" "ep_origin_access_identity" {
-<<<<<<< HEAD
   comment = "EpamPro cloudfront origin access identity"
-=======
-  comment = "EpamSales cloudfront origin access identity"
->>>>>>> GitHub/master
 }
 
 resource "aws_cloudfront_distribution" "ep_website_cdn" {
@@ -47,12 +43,9 @@ resource "aws_cloudfront_distribution" "ep_website_cdn" {
 
   restrictions {
     geo_restriction {
-<<<<<<< HEAD
       restriction_type = "whitelist"
       locations        = ["US", "CA", "GB", "DE", "BY", "AZ", "KZ"]
-=======
       restriction_type = "none"
->>>>>>> GitHub/master
     }
   }
 
@@ -61,13 +54,9 @@ resource "aws_cloudfront_distribution" "ep_website_cdn" {
     ssl_support_method       = "sni-only"
   }
 
-<<<<<<< HEAD
 tags = {
   Environment = "production"
 	}
-
-=======
->>>>>>> GitHub/master
 }
 
 data "template_file" "ep_bucket_policy" {
