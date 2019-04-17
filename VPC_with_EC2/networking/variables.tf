@@ -1,3 +1,4 @@
+#----Networking/variables.tf----
 variable "ep_vpc01_cidr" {}
 variable "ep_elastic_ip_NatA" {}
 variable "ep_elastic_ip_NatB" {}

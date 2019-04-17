@@ -1,3 +1,4 @@
+#----Networking/main.tf----
 data "aws_availability_zones" "ep_availability_zones" {}
 
 resource "aws_vpc" "ep_vpc01" {
@@ -102,6 +103,7 @@ tags {
 resource "aws_subnet" "ep_public_subnetA" {
 	vpc_id = "${aws_vpc.ep_vpc01.id}"
 	cidr_block = "${var.ep_subnetA_cidr}"
+	map_public_ip_on_launch = true
 	availability_zone = "us-east-1a"
 tags	{
 	Name = "EpamPro_PublicSubnetA"
@@ -111,6 +113,7 @@ tags	{
 resource "aws_subnet" "ep_public_subnetB" {
 	vpc_id = "${aws_vpc.ep_vpc01.id}"
 	cidr_block = "${var.ep_subnetB_cidr}"
+	map_public_ip_on_launch = true
 	availability_zone = "us-east-1b"
 tags	{
 	Name = "EpamPro_PublicSubnetB"
