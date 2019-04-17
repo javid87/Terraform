@@ -1,3 +1,4 @@
+#----Storage/outputs.tf----
 output "ep_log_bucket_name" {
 	value = "${aws_s3_bucket.ep_s3.id}"
 }

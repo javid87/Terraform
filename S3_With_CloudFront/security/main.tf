@@ -1,3 +1,4 @@
+#----Security/main.tf----
 resource "aws_cloudfront_origin_access_identity" "ep_origin_access_identity" {
   comment = "EpamPro cloudfront origin access identity"
 }

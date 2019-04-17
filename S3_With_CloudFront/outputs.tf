@@ -1,3 +1,4 @@
+#----S3_With_CloudFront-root/outputs.tf----
 output "Log_Bucket_Name" {
 	value = "${module.ep_storage.ep_log_bucket_name}"
 }
